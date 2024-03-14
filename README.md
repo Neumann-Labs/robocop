@@ -1,6 +1,16 @@
 # Robocop
-Robocop is a **prototype** Mixture of Experts (MoE) model with a focus on aiding cybersecurity professionals detect and triage incidents. 
+Robocop is a **prototype** intrusion detection system (IDS) with automated incident
+triage capabilities. 
 
-Robocop consists of a centralized, fine tuned Large Language Model which is aided by several classifiers which analyze PCAP files, executables, and various logs commonly found in desktop devices and IoT devices. By aggregating the results of these classifiers across an entire system, Robocop is able to form a comprehensive, global view of a system, thwarting attackers attempts at obfuscation.
+Robocop's core detection system is an Ensemble method -- a collection of machine 
+learning methods that aggregate their predictions and coordinate to
+analyze network traffic and keep the bad guys out. 
 
-Robocop takes automated actions to stop attacks while also preserving logs stored in a non-local database so that human responders can make sense of what happened. Robocop acts as both a Managed Detection Response (MDR) service and an aid to incident handlers. 
+At the base there are several anomaly detectors monitoring the network
+and processes for anomalous traffic. If anything out of the ordinary is
+found, the suspicious activity is then passed to a more specialized
+classifier model to figure out what exactly is going on. Then the
+results of this model, along with metadata about the traffic are passed
+to an Agentic Large Language Model that creates a report for incident
+handlers and takes steps to counteract the detected attack (e.g. closing
+ports, killing processes, backing up data, etc.)
