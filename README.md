@@ -19,7 +19,7 @@ ports, killing processes, backing up data, etc.)
 ### 1. Data Ingestion and Preprocessing:
 - Implement robust data ingestion pipelines to collect network and host traffic data from various sources (e.g., network sensors, log files, endpoints).
 - Preprocess the data to handle missing values, normalize features, and extract relevant information for analysis.
-- Bootstrap with the following data sources: (LINK TBA)
+- Bootstrap with these [data sources](https://github.com/nicholicaron/robocop/blob/main/data.md)
 ### 2. Feature Engineering:
 - Identify and extract meaningful features from the collected data that can effectively distinguish between normal and malicious activities.
 - Consider using techniques like feature selection and dimensionality reduction (e.g. PCA) to optimize the feature set.
