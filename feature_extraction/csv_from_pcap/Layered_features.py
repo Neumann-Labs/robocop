@@ -1,3 +1,14 @@
+###
+# This file contains classes for extracting features specific to different 
+# network layers (L1, L2, L3, L4).
+# 
+# The classes `L4`, `L3`, `L2`, and `L1` handle the extraction of features for 
+# each layer.
+#
+# The extracted features include protocol-specific information such as MQTT,
+# CoAP, HTTP, HTTPS, DNS, Telnet, SMTP, SSH, IRC, TCP, UDP, DHCP, LLC, and MAC.
+###
+
 import dpkt
 
 
