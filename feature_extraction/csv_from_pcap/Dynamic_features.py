@@ -1,3 +1,23 @@
+###
+# This file calculates dynamic network traffic features based on packet sizes and
+# counts
+#
+# - Calculates statistical features (of packet sizes) such as:
+#   + Sum
+#   + Minimum
+#   + Maximum
+#   + Mean
+#   + Std. Deviation
+#
+# - Calculates features related to incoming and outgoing packet streams, such as:
+#   + Magnitude
+#   + Radius
+#   + Correlation
+#   + Covariance
+#   + Variance Ratio
+#   + Weights
+###
+
 import numpy as np
 import itertools
 from scipy import stats
