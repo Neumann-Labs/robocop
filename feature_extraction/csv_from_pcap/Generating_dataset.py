@@ -1,3 +1,14 @@
+###
+# This file is responsible for generating the dataset by processing multiple
+# PCAP files
+#
+# It splits the PCAP files into smaller subfiles, converts them to CSV format, 
+# and merges the resulting CSV files
+#
+# Utilizes multiprocessing to parallelize the process for faster execution
+# Generated dataset is saved as a series of CSV files
+###
+
 from Feature_extraction import Feature_extraction
 import time
 import warnings
