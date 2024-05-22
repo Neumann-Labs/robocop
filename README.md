@@ -132,8 +132,9 @@ Coming Soon
 - [x] Consider using techniques like feature selection and dimensionality reduction (e.g. PCA) to optimize the feature set.
 ### 3. Ensemble of Machine Learning Models:
 - [x] Utilize a diverse set of machine learning algorithms, such as decision trees, random forests, support vector machines, and deep learning models, to build the ensemble.
-- [x] Train each model on different subsets or representations of the data to capture different patterns and anomalies.
-- [x] Implement a weighted voting or stacking mechanism to aggregate the predictions of individual models and make the final decision.
+- [ ] Train each model on different subsets or representations of the data to capture different patterns and anomalies.
+- [x] Implement a weighted voting mechanism to aggregate the predictions of individual models and make the final decision.
+- [ ] Experiment with more advanced ensemble techniques such as Stacking, Bagging, Boosting, etc. 
 ### 4. Agentic LLM Integration:
 - [ ] Leverage the capabilities of an agentic LLM, such as AutoGPT or BabyAGI, to automate incident triage and response.
 - [ ] Train the LLM on a large corpus of cybersecurity knowledge, including attack patterns, mitigation strategies, and incident response procedures.
