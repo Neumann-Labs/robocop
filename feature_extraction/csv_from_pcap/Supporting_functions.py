@@ -1,3 +1,12 @@
+###
+# This file contains utility functions used by other files for various tasks
+#
+# It includes functions for converting IP addresses to strings, getting 
+# protocol names, calculating flow information, parsing flag values, 
+# comparing flow flags, calculating packet counts per IP and protocol, and 
+# calculating incoming connections
+###
+
 import socket
 import struct
 from functools import reduce
