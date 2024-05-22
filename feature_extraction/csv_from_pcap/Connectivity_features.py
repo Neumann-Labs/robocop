@@ -1,3 +1,18 @@
+###
+# This file contains classes for extracting connectivity features from network 
+# packets
+#
+#
+# - The `Connectivity_features_basic` class extracts source and destination IP 
+# addresses, ports, and protocol type
+#
+# - The `Connectivity_features_time` class calculates duration-related features
+# such as jitter, inter-arrival time, active time, and idle time
+#
+# - The `Connectivity_features_flag_bytes` class calculates flag counts and byte 
+# counts for source and destination IP addresses 
+###
+
 from Supporting_functions import ip_to_str
 
 
