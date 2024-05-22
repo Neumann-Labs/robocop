@@ -1,3 +1,14 @@
+###
+# This is the main file (of the feature extraction module)
+#
+# It iterates over the packets in the PCAP files to extract relevant features, 
+# and stores them in a structured format
+#
+# Extracted features include timestamp, protocol type, protocol name, duration,
+# flag counts, byte counts, rate-related features, and protocol-specific features
+#
+###
+
 import dpkt
 import pandas as pd
 import json
