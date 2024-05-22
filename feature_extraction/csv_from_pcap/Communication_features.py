@@ -1,3 +1,18 @@
+###
+# This file contains classes for extracting communication features from different
+# wireless protocols such as Wi-Fi, Bluetooth, and Zigbee
+#
+# Extracted features include: 
+#   - type information
+#   - subtype information
+#   - DS status
+#   - Source and destination MAC addresses
+#   - Sequence number
+#   - Packet ID
+#   - Fragments
+#   - Packet duration 
+###
+
 import binascii
 
 import dpkt
